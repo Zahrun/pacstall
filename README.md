@@ -1,8 +1,3 @@
-# Alpha branch
-
-## This is v2 alpha branch. We aim to migrate pacstall v2 to python as python is
-faster than bash. This branch contains all the python code for pacstall v2.
-
 <p align="center">
 <a href="https://github.com/pacstall/pacstall/releases/latest"><img src="https://img.shields.io/github/v/release/pacstall/pacstall?color=red&style=flat-square"></a>
 <a href="https://www.gnu.org/software/bash/"><img src="https://img.shields.io/badge/bash-v5-brightgreen?style=flat-square&logo" alt="Bash v5"></a>
@@ -23,61 +18,11 @@ faster than bash. This branch contains all the python code for pacstall v2.
 <p align="center">Pacstall will attempt to become the AUR Ubuntu wishes it had. It takes the AUR and puts a spin on it, making it easier to install programs without scouring github repos and the likes</p>
 </p>
 
----
 
-### Installing
+### This branch contains the code of the [pacstall website hosted on github pages](https://pacstall.github.io)
 
-You can run the command below to install Pacstall.
-You can also grab the deb file [here](https://github.com/pacstall/pacstall/releases/latest) but it may be a bit older.
-```bash
-sudo bash -c "$(curl -fsSL https://git.io/JsADh || wget -q https://git.io/JsADh -O -)"
-```
----
+Welcome to pacstall, this branch is used for hosting the gh-pages website of pacstall.
 
-### Basic Commands
-```bash
-sudo pacstall -I foo
-``` 
-This will install foo. Equivalent of apt install
-
-```bash
-sudo pacstall -R foo
-```
-This will remove foo. Equivalent of apt remove
-
-```bash
-sudo pacstall -S foo
-```
-This will search for foo in repositories. Equivalent of apt search
-
-```bash
-sudo pacstall -A
-```
-Run this command with a github/gitlab url to add a repo
-
-```bash
-sudo pacstall -U
-```
-This will update pacstall's scripts
-
-```bash
-sudo pacstall -Up
-```
-
-This will update packages. Equivalent of apt upgrade
-
-These are the basic commands, for more info, run `pacstall -h`
-
----
-### Auto completions
-Pacstall has fully supported auto completions for the `bash`, and `fish` shells. For the `ZSH` shell you can emulate the completions using the following commands.
-#### Zsh auto completion
-Zsh can emulate bash completion scripts by default so all you have to do is add these to your `.zshrc` or wherever you source things:
-```bash
-autoload bashcompinit
-bashcompinit
-source /usr/share/bash-completion/completions/pacstall
-```
 
 ### License
 ---
