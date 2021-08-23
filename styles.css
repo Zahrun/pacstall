@@ -1,0 +1,73 @@
+:root {
+  --bg-color: hsl(75, 6%, 87%);
+  --a-color: hsl(214, 23%, 56%);
+  --a-focus-color: hsl(212, 29%, 36%);
+  --text-color: hsl(219, 37%, 50%);
+  --hero-color: hsl(211, 53%, 39%);
+  --card-bg-color: hsl(192, 50%, 59%);
+}
+
+/**@media(prefers-color-scheme: dark){
+	:root{
+	}
+}**/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "JetBrains Mono", sans-serif;
+  background-color: var(--bg-color);
+}
+
+.navbar-ul {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  margin-top: 1rem;
+  margin-left: 60%;
+}
+
+.navbar-item {
+  margin: 1rem;
+  list-style: none;
+  display: flex;
+  margin-right: 2rem;
+  text-align: center;
+  align-items: center;
+  margin-left: 0.5rem;
+  margin-right: 1.5rem;
+}
+
+.navbar-item a {
+  text-decoration: none;
+  color: var(--a-color);
+  font-size: 14px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.navbar-item a:hover {
+  color: var(--a-focus-color);
+}
+
+.navbar-item a,
+.icon {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.hero-cont {
+  margin-top: 7rem;
+  margin-left: 4rem;
+}
+
+.hero h2 {
+  color: var(--hero-color);
+  font-size: 3rem;
+}
+
+.hero p {
+  color: var(--text-color);
+  font-size: 2rem;
+}
